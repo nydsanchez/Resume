@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lugrasimo&family=Mulish:wght@300;500&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(8, 8, 149, 0.78);
+    color: gray;
+}
+
+h1, h2, h3{
+    font-family: 'Nanum Myeongjo', serif;
+    color: rgb(0, 0, 69);
+}
+p{
+    font-family: 'ABeeZee', sans-serif;
+}
+.container{
+    width: 90%;
+    height: 100%;
+    background: white;
+    display: flex;
+}

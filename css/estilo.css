@@ -28,8 +28,11 @@ header{
     height: 180px;
     top:0;
     left: 0;
+    position: fixed;
     justify-content: space-around;
     width: 100%;
+    border: 2px solid red;
+    background-color: black;
 }
 .imgTop img{
     margin-top: 10px;
@@ -66,6 +69,8 @@ header{
     color: #fff;
     justify-content: center;
     align-items: center;
+    border: 2px solid blue;
+    margin-top: 180px;
 } 
 .titulo{
     width: 40%;

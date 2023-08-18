@@ -4,66 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <link rel="stylesheet" href="./css/estilo2.css" />
+    <title>Contact</title>
 </head>
 
 <body>
-    <header>
-
-        <h1>NYDIA MASSIEL SÁNCHEZ</h1>
-        <h2>Project Management Professional</h2>
-        <p>Managua, Nicaragua / +505 88727064 / massiel.sanchez@sc-consulting.online</p>
-        <nav>
-            <hr>
-            <a href="contact.html">Resume</a>
-            <a href="contact.html">Contact</a>
-            <a href="hobbies.html">Hobbies</a>
-            <hr>
-        </nav>
-        <br>
-        <div>
-            <img src="./img/perfil.jpeg" alt="foto de perfil" width="150px">
-        </div>
-        <hr>
-    </header>
-    <main>
-
-
-        <table class="default">
-
-            <tr>
-                <td>
+    <div class="container">
+        <header>
+            <div class="heading">
+                <div class="imgTop">
+                    <img src="./img/perfil.jpeg" alt="">
+                </div>
+                <nav class="topmenu">
+                    <a class="toplink" href="index.html">Home</a>
+                    <a class="toplink" href="/index.html#experience">Work Experience</a>
+                    <a class="toplink" href="/index.html#certification">Certifications</a>
+                    <a class="toplink" href="./img/CV Nydia Sanchez.pdf" target="_blank">Resume</a>
+                    <a class="toplink" href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <div class="rrss top-rrss">
+                <ul>
+                    <li><a class="rrss-flex" href="https://github.com/nydsanchez" target="_blank"><img src="./img/github.png"alt="github"></a></li>
+                    <li><a class="rrss-flex" href="https://www.linkedin.com/in/nydia-massiel-sanchez-16318393" target="_blank"><img src="./img/Linkedin icon.png" alt="Linkedin"></a></li>
+                    <li><a class="rrss-flex" href="https://twitter.com/sanchezc2023" target="_blank"><img src="./img/twitter.png"alt="twitter"></a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="principal">
+               
+                <form>
+                    <h1>Contact me!</h1>
+                    <p>Please fill out this form with the required information</p>
+                    <Label>Nombre:</Label> <br> <input type="text" placeholder="Nombre"><br>
+                    <label for=""> Email: </label><br> <input type="email" name="" id="" placeholder="user@gmail.com">
+                    <br>
+                    <label for=""> Message: </label> <br> <textarea name="" id="" cols="30" rows="10"
+                        placeholder="Write here"></textarea>
+                    <br>
+                    <input type="submit" name="" id="" value="Send">
+                </form>
+                <div class="mapa">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.976655720047!2d-86.23788266110626!3d12.113749733155677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73ffd52712f06d%3A0xe98140fd1f8995b5!2sSERVITECSA!5e0!3m2!1ses!2sni!4v1692313842968!5m2!1ses!2sni"
-                        width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </td>
-                <td>
-                    <form>
-                        <Label>Nombre:</Label> <br> <input type="text" placeholder="Nombre"><br>
-                        <label for=""> Email: </label><br> <input type="email" name="" id=""
-                            placeholder="user@gmail.com"> <br>
-                        <label for=""> Message: </label> <br> <textarea name="" id="" cols="50" rows="10"
-                            placeholder="Write here"></textarea>
-                        <br>
-                        <input type="submit" name="" id="" value="Send">
-                    </form>
-                    <br>
-                </td>
+                </div>
+                
+            </div>
+        </main>
 
-            </tr>
-        </table>
-
-        <address>Bo. La Fuente. Reposteria Duya Mágica 3c. S 1/2c. E.
-            Managua, Nicaragua. | Apto. Postal: 14091</address>
-
-    </main>
-
-    <footer>
-        <hr>
-        &copy; 2023 - SC-Consulting
-        <hr>
-    </footer>
+        <footer>
+            <div class="fin">
+                <nav class="footerNav">
+                    <ul>
+                        <li><a class="footerlink" href="index.html">Home</a></li>
+                        <li><a class="footerlink" href="./img/CV Nydia Sanchez.pdf">Resume</a></li>
+                        <li><a class="footerlink" href="contact.html">Contact</a></li>
+                        <li><a class="footerlink" href="hobbies.html">Hobbies</a></li>
+                    </ul>
+                </nav>
+                <div class="direccion">
+                    <address>
+                        <p>Bo. La Fuente, de la Reposteria Duya Mágica 3c. Sur 1/2c. Este.</p>
+                    </address>
+                    <p>Managua, Nicaragua</p>
+                    <p>Email: at@sc-consulting.online</p>
+                    <p>Teléfono: +505 8872-7064</p>
+                </div>
+                <div class="rrss">
+                    <ul>
+                        <li><a href="https://github.com/nydsanchez" target="_blank"><img src="./img/github.png"
+                                    alt="github"></a></li>
+                        <li><a href="https://www.linkedin.com/in/nydia-massiel-sanchez-16318393" target="_blank"><img
+                                    src="./img/Linkedin icon.png" alt="Linkedin"></a></li>
+                        <li><a href="https://twitter.com/sanchezc2023" target="_blank"><img src="./img/twitter.png"
+                                    alt="twitter"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyrigth">
+                &copy; 2023 | SC-Consulting
+            </div>
+        </footer>
 
 </body>
 

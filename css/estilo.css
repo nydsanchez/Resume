@@ -20,56 +20,83 @@ p{
 }
 
 header{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/felipe-furtado-2zDXqgTzEFE-unsplash.jpg);
-   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) ), url(../img/felipe-furtado-2zDXqgTzEFE-unsplash.jpg); */
-    background-size: cover;
-    background-repeat: no-repeat;   
     width: 100%;
-    height: 500px;
+    height: 650px;   
+    background-color: black;
     border: 3px solid red;
-   
+}
+.heading{
+    display: flex;
+    height: 180px;
+    top:0;
+    left: 0;
+   justify-content: space-around;
+    width: 100%;
+}
+.imgTop img{
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 20px;
 }
 
-.divtitulo{
-    height: 150px;
-    border: 3px solid blue;
-    display: flex;
-    background-color: rgba(0,0,0,0.6);
-   
-}
-.titulo{
-    border: 3px solid green;
-    width: 45%;
-    height: 150px;
-    color: #fff;
-    padding: 15px 50px;
-    text-align: center;
-}
 .topmenu{
-    border: 3px solid orange;
+    position: relative;
     width: 55%;
-    height: 150px;
+    height: 180px;
     padding: 15px 50px;
     display: flex;
-   justify-content: space-evenly;
+    justify-content: space-evenly;
     align-items: center; 
     font-family: 'ABeeZee', sans-serif;
 }
 .topmenu a{
-   padding-top: 10px;
-   padding-left:  15px; 
-   padding-right: 20px;
-   padding-bottom: 30px;
-   
+   padding: 10px 20px 30px 15px;
     height: 30px;
     border-radius: 10px;
     text-decoration: none;
     color: white;
-    background-color: rgba(88, 84, 84, 0.662);
+    background-color: rgba(80, 77, 76, 0.433);
+}
+.divtitulo{
+    display: flex; 
+    flex-flow: column wrap;
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) ), url(../img/felipe-furtado-2zDXqgTzEFE-unsplash.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+} 
+.titulo{
+    width: 40%;
+    height: 150px;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    position: relative;
 }
 
 .btTop{
-    border: 3px solid red;
-    width: 100%;
+    width: 30%;
     height: 100px;
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.btTop a{
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 100px;
+    margin: 10px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(232, 19, 19, 0.733);
+    font-family: 'ABeeZee', sans-serif;
 }

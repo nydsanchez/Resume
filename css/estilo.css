@@ -160,3 +160,13 @@ padding: 10px 30px;
     background-color: rgba(0, 0, 0, 0.911);
     color: white;
 }
+.rrss {
+    
+    display: flex;
+    align-items: center;
+    width: 172px;
+    gap: 15px;
+}
+.rrss ul li{
+   list-style: none; 
+}

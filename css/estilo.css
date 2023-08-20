@@ -71,7 +71,7 @@ gap: 30px;
   text-decoration: none;
 }
  .topmenu li a:hover{
-    color: rgba(245,88,0,1);
+    font-size: large;
  }
 
   .topmenu li a.active {
@@ -161,6 +161,7 @@ main{
     width: 100%;
     padding-bottom: 20px;
     text-align: center;
+   
     font-size: 60px;
     font-weight: bolder;
 }
@@ -200,8 +201,9 @@ main{
     background-size:auto;
     background-position: right top;
 background-repeat: no-repeat;
-}
 
+
+}
 #skills h2{
     width: 100%;
     color: rgba(245,88,0,1);
@@ -386,14 +388,21 @@ padding: 10px 30px;
     height: 50px;
 }
 .rrss {
-    display: flex;
-    align-items: center;
     width: 172px;
+}
+.rrss ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
 }
-.rrss ul li{
-   list-style: none; 
+
+.rrss ul li a img{
+    padding-top: 10px;
+    width: 25px;
+  
 }
 .rrss ul li a img:hover{
-    width: 30px; 
+    width: 40px;
 }

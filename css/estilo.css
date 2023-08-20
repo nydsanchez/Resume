@@ -71,7 +71,7 @@ gap: 30px;
   text-decoration: none;
 }
  .topmenu li a:hover{
-    font-size: large;
+    color: rgba(245, 88, 0, 1);
  }
 
   .topmenu li a.active {

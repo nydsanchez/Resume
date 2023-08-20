@@ -396,3 +396,6 @@ padding: 10px 30px;
 .rrss ul li{
    list-style: none; 
 }
+.rrss ul li a img:hover{
+    width: 30px; 
+}

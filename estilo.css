@@ -61,7 +61,7 @@ header {
   margin-top: 7.4rem;
   width: 100vw;
   height: 90vh;
-  background-image: url("./img/herobg.png");
+  background-image: url("./herobg.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -154,7 +154,7 @@ header {
   flex-flow: column;
   width: 100vw;
   height: auto;
-  background-image: url("./img/about.png");
+  background-image: url("./about.png");
   background-repeat: no-repeat;
   background-position: center right;
   background-size: 40% auto;

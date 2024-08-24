@@ -180,6 +180,7 @@ header {
   height: auto;
   display: flex;
   flex-flow: column;
+  align-items: center;
   padding: 13rem;
   width: 100vw;
   opacity: 0; /* La sección empieza invisible */
@@ -642,14 +643,17 @@ footer {
     text-align: center; /* Centra el texto */
   }
 
+  .heading1 {
+    font-size: 3.6rem;
+  }
   .heading2 {
     font-size: 2.8rem;
   }
   .hero-desc p {
-    font-size: 1rem; /* Ajusta el tamaño de la fuente si es necesario */
-    padding: 0 1rem; /* Añade un poco de padding para mayor legibilidad */
+    font-size: 1.6rem; /* Ajusta el tamaño de la fuente si es necesario */
+    /* Añade un poco de padding para mayor legibilidad */
     width: 100%;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
   }
   .hero-rrss {
     width: 100%;
@@ -676,8 +680,15 @@ footer {
     flex-grow: 0;
   }
 
-  .about {
-    padding: 7rem 5rem;
+  .about-text {
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-title {
+    text-align: center;
+    padding: 0;
+    margin: 0;
   }
   .about-text {
     background-position: bottom right;
@@ -688,7 +699,13 @@ footer {
     line-height: 1.8rem;
     text-align: center;
     width: 80%;
-    margin-right: 5rem;
+    padding-left: 5rem;
+  }
+
+  .btn-cv {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
   }
 
   .about-skills-div {
@@ -708,21 +725,21 @@ footer {
   .square > li:nth-child(1)::before {
     content: "◆"; /* Símbolo de rombo */
     position: absolute;
-    left: 7rem;
+    left: 3rem;
     color: #f55800; /* Color del rombo */
     font-size: 3em;
   }
   .square > li:nth-child(2)::before {
     content: "■"; /* Símbolo de rombo */
     position: absolute;
-    left: 7rem;
+    left: 2.3rem;
     color: #f55800; /* Color del rombo */
     font-size: 3em;
   }
   .square > li:nth-child(3)::before {
     content: "●"; /* Símbolo de rombo */
     position: absolute;
-    left: 10rem;
+    left: 5.5rem;
     color: #f55800; /* Color del rombo */
     font-size: 3em;
   }
@@ -733,6 +750,9 @@ footer {
 
   .form-input-name {
     width: 100%;
+  }
+  .lastname {
+    margin-left: 0;
   }
   .btn-cta {
     align-self: center;

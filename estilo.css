@@ -37,8 +37,16 @@ header {
   margin: 1rem 12rem;
 }
 
+.box-img h2 {
+  font-size: 3.8rem;
+  color: #fff;
+  font-style: normal;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
 .logo {
-  height: 5rem;
+  height: 4.8rem;
   color: #000;
 }
 .menu ul {
@@ -50,13 +58,30 @@ header {
 
 .menu ul li a:link,
 .menu ul li a:visited {
+  display: inline-block;
   color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 2rem;
+  position: relative;
+  padding: 1rem;
 }
 
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Altura de la línea */
+  background-color: #f55800; /* Color del subrayado */
+  transition: width 0.5s ease-in-out; /* Duración y tipo de transición */
+}
+
+.menu ul li a:hover::after {
+  width: 100%; /* Hace que la línea se expanda */
+}
 .hero {
   margin-top: 7.4rem;
   width: 100vw;
@@ -87,6 +112,12 @@ header {
 .hero-rrss-ico {
   height: 1.8rem;
   color: #cfcfcf;
+  animation: appear 2s 1s ease-out;
+  animation-fill-mode: backwards;
+}
+
+.hero-rrss-ico:hover {
+  transform: scale(1.2);
 }
 
 .hero-desc {
@@ -99,6 +130,7 @@ header {
   color: #f55800;
   font-size: 7.2rem;
   font-weight: 400;
+  animation: moveInRight 1s ease-out;
 }
 
 .heading2 {
@@ -106,6 +138,7 @@ header {
   font-size: 3.2rem;
   font-weight: 500;
   color: #fff;
+  animation: moveInBottom 1s ease-out;
 }
 
 .parrafo {
@@ -114,6 +147,8 @@ header {
   width: 70rem;
   color: #f4f5f7;
   line-height: 3.2rem;
+  animation: moveInBottom 1s 1s ease-out;
+  animation-fill-mode: backwards;
 }
 .portfolio {
   padding: 13rem 2.4rem;
@@ -195,6 +230,12 @@ footer {
   cursor: pointer;
   margin-top: 7rem;
   font-size: 1.7rem;
+  position: relative;
+}
+
+.btn-cv {
+  animation: moveInBottom 1s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
 
 .btn-cv:hover {
@@ -207,8 +248,36 @@ footer {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.btn-cv::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn-cv:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated::after {
+  background: #f55800;
+}
+
 .about-skills {
   padding: 13rem 0;
+  opacity: 0; /* La sección empieza invisible */
+  transform: translateY(50px); /* Desplazada ligeramente hacia abajo */
+  transition: opacity 5s ease-out, transform 1s ease-out; /* Animación suave */
+}
+
+.about-skills.visible {
+  opacity: 1; /* Se vuelve visible */
+  transform: translateY(0); /* Se mueve a su posición original */
 }
 
 .square {
@@ -317,5 +386,40 @@ form textarea {
   margin-top: 1rem;
 }
 
-body > hr {
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(550px);
+  }
+
+  70% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

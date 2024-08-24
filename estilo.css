@@ -182,6 +182,9 @@ header {
   flex-flow: column;
   padding: 13rem;
   width: 100vw;
+  opacity: 0; /* La sección empieza invisible */
+  transform: translateY(50px); /* Desplazada ligeramente hacia abajo */
+  transition: opacity 5s ease-out, transform 1s ease-out; /* Animación suave */
 }
 
 .about-text {
@@ -272,10 +275,11 @@ footer {
   padding: 13rem 0;
   opacity: 0; /* La sección empieza invisible */
   transform: translateY(50px); /* Desplazada ligeramente hacia abajo */
-  transition: opacity 5s ease-out, transform 1s ease-out; /* Animación suave */
+  transition: opacity 5s ease-out, transform 1s ease-out 5s; /* Animación suave */
 }
 
-.about-skills.visible {
+.about-skills.visible,
+.about.visible {
   opacity: 1; /* Se vuelve visible */
   transform: translateY(0); /* Se mueve a su posición original */
 }

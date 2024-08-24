@@ -83,13 +83,13 @@ header {
   width: 100%; /* Hace que la línea se expanda */
 }
 .hero {
-  margin-top: 7.4rem;
+  margin-top: 6.5rem;
   width: 100vw;
   height: 90vh;
   background-image: url("./herobg.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain;
+  background-size: 35% auto;
   background-color: #1c1a19;
   display: flex;
   gap: 5rem;
@@ -195,32 +195,7 @@ header {
   background-image: url("./about.png");
   background-repeat: no-repeat;
   background-position: center right;
-  background-size: 40% auto;
-}
-
-footer {
-  width: 100vw;
-  height: 5rem;
-  display: flex;
-  border-top: 1px solid #dfe1e6;
-  align-items: center;
-}
-
-.footerNav ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  width: 100vw;
-  gap: 2rem;
-  height: 100%;
-}
-
-.footerNav ul li a image {
-  margin: auto 0;
-}
-
-.rrss-ico-gray {
-  height: 1.8rem;
+  background-size: 45% auto;
 }
 
 .btn-cv,
@@ -339,17 +314,22 @@ footer {
 .contact {
   display: flex;
   width: 100vw;
+  justify-content: space-around;
   padding: 13rem;
 }
 
-.contact div {
-  width: 50%;
+.contact-desc {
+  width: 40%;
 }
 
-.contact p {
+.contact-desc p {
   font-size: 4rem;
   font-weight: 700;
   color: #262626;
+}
+
+.contact-form {
+  width: 60%;
 }
 .contact form {
   display: flex;
@@ -360,9 +340,6 @@ footer {
 
 .contact form div {
   width: 100%;
-}
-.contact-desc {
-  width: 67%;
 }
 
 .form-input-name {
@@ -388,6 +365,31 @@ form textarea {
 
 .btn-cta {
   margin-top: 1rem;
+}
+
+footer {
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  border-top: 1px solid #dfe1e6;
+  align-items: center;
+}
+
+.footerNav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  width: 100vw;
+  gap: 2rem;
+  height: 100%;
+}
+
+.footerNav ul li a image {
+  margin: auto 0;
+}
+
+.rrss-ico-gray {
+  height: 1.8rem;
 }
 
 @keyframes moveInRight {
@@ -425,5 +427,199 @@ form textarea {
 
   100% {
     opacity: 1;
+  }
+}
+
+/* media queries*/
+
+@media (max-width: 1200px) {
+  .parrafo {
+    width: 60rem;
+  }
+  .contact p {
+    font-size: 3.2rem;
+  }
+
+  .square > li:nth-child(1)::before {
+    content: "◆"; /* Símbolo de rombo */
+    position: absolute;
+    left: 5.5%;
+    color: #f55800; /* Color del rombo */
+    font-size: 3em;
+  }
+  .square > li:nth-child(2)::before {
+    content: "■"; /* Símbolo de rombo */
+    position: absolute;
+    left: 35%;
+    color: #f55800; /* Color del rombo */
+    font-size: 3em;
+  }
+  .square > li:nth-child(3)::before {
+    content: "●"; /* Símbolo de rombo */
+    position: absolute;
+    left: 69%;
+    color: #f55800; /* Color del rombo */
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 1025px) {
+  .parrafo {
+    width: 50rem;
+    font-size: 1.8rem;
+  }
+  .contact-desc {
+    width: 30%;
+  }
+  .contact p {
+    font-size: 3.2rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0;
+  }
+
+  .contact form {
+    padding: 0;
+  }
+
+  .square h3 {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+  .square > li:nth-child(1)::before {
+    content: "◆"; /* Símbolo de rombo */
+    position: absolute;
+    left: 5%;
+    color: #f55800; /* Color del rombo */
+    font-size: 3em;
+  }
+  .square > li:nth-child(2)::before {
+    content: "■"; /* Símbolo de rombo */
+    position: absolute;
+    left: 35%;
+    color: #f55800; /* Color del rombo */
+    font-size: 3em;
+  }
+  .square > li:nth-child(3)::before {
+    content: "●"; /* Símbolo de rombo */
+    position: absolute;
+    left: 70%;
+    color: #f55800; /* Color del rombo */
+    font-size: 3em;
+  }
+  .nada {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 20vh;
+  }
+
+  .box-img {
+    margin: 1rem auto;
+  }
+  .menu ul {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero {
+    margin-top: 6.5rem;
+    gap: 2rem;
+    background-position: bottom right;
+    background-size: 35% auto;
+    height: 100vh;
+  }
+  .hero-rrss {
+    width: 10vw;
+  }
+  .heading1 {
+    font-size: 5.2rem;
+  }
+
+  .hero-desc p {
+    font-size: 1.5rem;
+    width: 45rem;
+  }
+  .portfolio-title {
+    padding-left: 5rem;
+    display: block;
+  }
+  .portfolio-title h2 {
+    width: auto;
+    margin-bottom: 1rem;
+  }
+  .portfolio-title hr {
+    display: block;
+    width: 100%;
+    flex-grow: 0;
+  }
+
+  .about {
+    padding: 7rem 5rem;
+  }
+  .about-text {
+    background-position: bottom right;
+    background-size: 45% auto;
+  }
+  .about-text > p {
+    font-size: 1.8rem;
+  }
+  .about-skills {
+    padding: 7rem 0;
+  }
+  .about-skills-div {
+    display: block;
+    width: 100%;
+  }
+  .square {
+    margin-top: 10rem;
+  }
+  .square h3 {
+    font-size: 2rem;
+    padding-left: 2.5rem;
+    font-weight: 500;
+  }
+  .square > li:nth-child(1)::before {
+    content: "◆"; /* Símbolo de rombo */
+    position: absolute;
+    left: 1rem;
+    color: #f55800; /* Color del rombo */
+    font-size: 3em;
+  }
+  .square > li:nth-child(2)::before {
+    content: "■"; /* Símbolo de rombo */
+    position: absolute;
+    left: 15rem;
+    color: #f55800; /* Color del rombo */
+    font-size: 3em;
+  }
+  .square > li:nth-child(3)::before {
+    content: "●"; /* Símbolo de rombo */
+    position: absolute;
+    left: 31.5rem;
+    color: #f55800; /* Color del rombo */
+    font-size: 3em;
+  }
+  .nada {
+    font-size: 1.6rem;
+  }
+  .contact {
+    display: flex;
+    flex-flow: column;
+    padding: 7rem 5rem;
+  }
+  .contact-desc {
+    width: 100%;
+  }
+  .contact-desc p {
+    font-size: 3.2rem;
+  }
+  .contact-form {
+    width: 100%;
+    margin-top: 5rem;
   }
 }
